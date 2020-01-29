@@ -1,7 +1,14 @@
 <h1>Display your Pirate here</h1>
+<%=@pirate[:pirate][:name]%> <br>
+<%=@pirate[:pirate][:weight]%><br>
+<%=@pirate[:pirate][:height]%><br>
 
+<h2>Display your first ship here</h2> 
+<%@pirate[:pirate][:ships][0].each do |key, value|%>
+<%=value%><br>
+<%end%>
 
-<h2>Display your first ship here</h2>
-
-
-<h2>Display your second ship here</h2>
+<h2>Display your second ship here</h2> %>
+<%@pirate[:pirate][:ships][1].each do |key, value|%>
+<%=value%><br>
+<%end%>
